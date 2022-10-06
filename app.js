@@ -10,11 +10,11 @@ const abrir= document.querySelector(".button");
 const modal= document.querySelector(".modal");
 const modalC= document.querySelector(".modal-container");
 
-let a = [0, 0, 0, 0, 'transparent'];
+let a = [0, 0, 0, 0, 'black'];
 let ident, backgroundCol, borderCol;
 let borderRad=0;
-let heightDesign=0;
-let widthDesign=0;
+let heightDesign=300;
+let widthDesign=300;
 
 
 for (let i = 0; i < colorBack.length; i++) {
