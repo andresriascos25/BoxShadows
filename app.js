@@ -11,7 +11,8 @@ const modal= document.querySelector(".modal");
 const modalC= document.querySelector(".modal-container");
 
 let a = [0, 0, 0, 0, 'black'];
-let ident, backgroundCol, borderCol;
+let ident, borderCol;
+let backgroundCol='white';
 let borderRad=0;
 let heightDesign=300;
 let widthDesign=300;
@@ -133,7 +134,7 @@ abrir.addEventListener('click', (e) => {
   modalC.style.visibility='visible';
   modal.classList.toggle('modal-close'); //toggle quita y pune la clase
   code.innerHTML= `box-shadow: ${a[0]}px ${a[1]}px ${a[2]}px ${a[3]}px ${a[4]};  width: ${widthDesign}px; heigth: ${heightDesign}px; 
-  border-radius: ${borderRad}px; border-color: ${borderCol}; background-color: ${backgroundCol}`;
+  border-radius: ${borderRad}px; border-color: ${borderCol}; background-color: ${backgroundCol};`;
 })
 
 cerrar.addEventListener('click', () =>{
