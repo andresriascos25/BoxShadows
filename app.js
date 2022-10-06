@@ -129,7 +129,6 @@ for (let i = 0; i < valor.length; i++) {
 }
 
 abrir.addEventListener('click', (e) => {
-  e.preventDefault(); //quitar la almohadilla (#)
   modalC.style.opacity='1';
   modalC.style.visibility='visible';
   modal.classList.toggle('modal-close'); //toggle quita y pune la clase
