@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Box shadow</h1>
+    <a class="button" href="#">Get Code CSS</a>
+  </header>
+  <div class="main">
+    <div class="section1">
+      <div class="customize">
+        <h2>Customize Shadows</h2>
+      </div>
+      <div class="ajustable">
+        <div class="horizontal">
+          <h4>Horizontal offset</h4>
+          <div class="value">
+            <input class="value-input" type="number" value="0" name="" id="value1">
+            <p>px</p>
+          </div>
+        </div>
+        <input class="range-properties" type="range" value="0" name="" id="range1" min="-100" max="100">
+      </div>
+      <div class="ajustable">
+        <div class="horizontal">
+          <h4>Vertical offset</h4>
+          <div class="value">
+            <input class="value-input" type="number" value="0" name="" id="value2">
+            <p>px</p>
+          </div>
+        </div>
+        <input class="range-properties" type="range" name="" id="range2" min="-100" max="100">
+      </div>
+      <div class="ajustable">
+        <div class="horizontal">
+          <h4>Blur radius</h4>
+          <div class="value">
+            <input class="value-input" type="number" value="0" name="" id="value3">
+            <p>px</p>
+          </div>
+        </div>
+        <input class="range-properties" type="range" value="0" name="" id="range3">
+      </div>
+      <div class="ajustable">
+        <div class="horizontal">
+          <h4>Spread radius</h4>
+          <div class="value">
+            <input class="value-input" type="number" value="0" name="" id="value4">
+            <p>px</p>
+          </div>
+        </div>
+        <input class="range-properties" type="range" value="0" name="" id="range4" min="0" max="100">
+      </div>
+      <div class="color-shadow">
+        <h4>Color</h4>
+        <input type="color" name="" id="color">
+      </div>
+    </div>
+    <div class="section-main">
+      <div class="design"></div>
+    </div>
+    <div class="section2">
+      <div class="title-properties">
+        <h2>Box properties</h2>
+      </div>
+      <div class="container-properties">
+        <div class="main-color">
+          <h4>Background color</h4>
+          <input class="color-design" type="color" id="background-color">
+        </div>
+        <div class="main-color">
+          <h4>Border color</h4>
+          <input class="color-design" type="color" id="border-color">
+        </div>
+        <div class="box">
+          <div class="horizontal">
+            <h4>Border radius</h4>
+            <div class="value">
+              <input class="value-input" type="number" value="0" name="" id="value5">
+              <p>px</p>
+            </div>
+          </div>
+          <input class="range-properties" type="range" value="0" name="" id="range5" min="0" max="150">
+        </div>
+        <div class="box">
+          <div class="horizontal">
+            <h4>Height</h4>
+            <div class="value">
+              <input class="value-input" type="number" value="300" name="" id="value6">
+              <p>px</p>
+            </div>
+          </div>
+          <input class="range-properties" type="range" value="300" name="" id="range6" min="0" max="400">
+        </div>
+        <div class="box">
+          <div class="horizontal">
+            <h4>Width</h4>
+            <div class="value">
+              <input class="value-input" type="number" value="300" name="" id="value7">
+              <p>px</p>
+            </div>
+          </div>
+          <input class="range-properties" type="range" value="300" name="" id="range7" min="0" max="400">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Creado en academlo </p>
+  </footer>
+  
+    <div class="modal-container">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <img src="" alt="">
+        <h2>Codigo CSS</h2>
+        <p class="codigo"></p>
+      </div>
+    </div>
+ 
+</body>
+<script src="./app.js"></script>
+
+</html>

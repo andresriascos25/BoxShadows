@@ -1,0 +1,263 @@
+body {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  padding: 0px 20px;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  background-color: #349899;
+  border-radius: 10px;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.section1 {
+  flex-grow: 1;
+  border-right: 1px solid rgb(197, 197, 197);
+  background-color: rgb(248, 249, 252);
+  overflow-x: hidden;
+}
+
+.customize {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+}
+
+.section1 h2 {
+  font-size: 20px;
+  margin-top: 0;
+
+}
+
+.ajustable {
+  margin: 40px 20px;
+
+}
+
+.horizontal {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.value {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.value-input {
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: rgb(206, 199, 199);
+  text-align: center;
+  font-size: 16px;
+}
+
+.value p {
+  font-size: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 18px;
+  height: 18px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  border: 0;
+}
+
+
+.range-properties {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(197, 197, 197);
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-appearance: none;
+}
+
+.color-shadow {
+  width: 100%;
+  margin: 40px 20px;
+}
+
+#color {
+  width: 90%;
+  height: 45px;
+  border-radius: 10px;
+  border-color: rgb(197, 197, 197);
+  font-size: 16px;
+  padding: 20px;
+}
+
+
+.section-main {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 244, 244);
+  border-right: 1px solid rgb(197, 197, 197);
+  overflow: hidden;
+}
+
+.design {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px 0px transparent;
+
+}
+
+.section2 {
+  flex-grow: 1;
+  background: rgba(243, 243, 243, 0.863)
+}
+
+.title-properties {
+  width: 100%;
+  height: 70px;
+  padding: 20px;
+  background-color: white;
+}
+
+.title-properties h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.container-properties {
+  padding: 20px;
+}
+
+.color-design {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border-color: rgb(197, 197, 197);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.box {
+  margin: 20px 0;
+}
+
+.modal-container {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal {
+  width: 350px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 0.8s;
+  transform: translateY(0%);
+}
+
+.modal-close {
+  transform: translateY(-250%); 
+}
+
+.close{
+  position: absolute;
+  margin: 5px 5px;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 0, 0, 0.596);
+  color: white;
+  cursor: pointer;
+  line-height: 25px;
+  border-radius: 50%;
+
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid black;
+}
+
+@media (max-width: 480px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .section1 {
+    width: 100%;
+    height: 100vh;
+  }
+
+
+
+}
