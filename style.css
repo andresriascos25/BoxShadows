@@ -269,11 +269,7 @@ footer p {
   .section1{   
     grid-row: 2/3;
   }
-
-  .design{
-    max-width: 200px;
-    max-height: 200px;
-  }
+  
   .section-main{
     grid-row: 3/4;
   }
