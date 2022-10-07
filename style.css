@@ -259,7 +259,7 @@ footer p {
   font-size: 14px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
    
   .main{
     grid-template-columns: 1fr;
@@ -271,8 +271,8 @@ footer p {
   }
 
   .design{
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
   }
   .section-main{
     grid-row: 3/4;
@@ -283,26 +283,3 @@ footer p {
 
 }
 
-@media (max-width: 768px) {
-   
-  .main{
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px 1fr 0.7fr 1fr 40px;
-  }
-
-  .section1{   
-    grid-row: 2/3;
-  }
-
-  .design{
-    width: 200px;
-    height: 200px;
-  }
-  .section-main{
-    grid-row: 3/4;
-  }
-  .section2{ 
-    grid-row: 4/5;
-  }
-
-}

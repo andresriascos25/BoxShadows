@@ -14,8 +14,8 @@ let a = [0, 0, 0, 0, 'black'];
 let ident, borderCol;
 let backgroundCol='white';
 let borderRad=0;
-let heightDesign=300;
-let widthDesign=300;
+let heightDesign=200;
+let widthDesign=200;
 
 
 for (let i = 0; i < colorBack.length; i++) {
