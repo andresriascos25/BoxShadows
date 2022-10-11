@@ -144,22 +144,3 @@ cerrar.addEventListener('click', () =>{
     modalC.style.visibility='hidden';
   },700)
 })
-
-let r=[];
-let g=[];
-let b=[];
-function hexArgb(hex){
-
-  let array = hex.split('');
- /*  r.push(array[1],array[2]);
-  g.push(array[3],array[4]);
-  b.push(array[5],array[6]); */
-  
-  for(let i=1; i<array.length; i++){
-    console.log(array[i]);
-    
-  }
-  console.log(r);
-}
-
-hexArgb('#123456');
